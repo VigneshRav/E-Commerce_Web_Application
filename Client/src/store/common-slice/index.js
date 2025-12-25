@@ -14,7 +14,7 @@ export const getFeatureImages = createAsyncThunk(
     const role = sessionStorage.getItem("role");
 
     const response = await axios.get(
-      `http://localhost:5000/api/common/feature/get?adminid=${email}&role=${role}`
+      `https://e-commerce-server-4qa7.onrender.com/api/common/feature/get?adminid=${email}&role=${role}`
     );
 
     return response.data;
@@ -30,7 +30,7 @@ export const addFeatureImage = createAsyncThunk(
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/common/feature",
+        "https://e-commerce-server-4qa7.onrender.com/api/common/feature",
         {
           image: uploadedImageUrl,
           adminid: sessionStorage.getItem("email"),

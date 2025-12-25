@@ -11,7 +11,7 @@ export const getAllOrdersForAdmin = createAsyncThunk(
   async () => {
     const email = sessionStorage.getItem("email");
     const response = await axios.get(
-      `http://localhost:5000/api/admin/orders/get?adminid=${email}`
+      `https://e-commerce-server-4qa7.onrender.com/api/admin/orders/get?adminid=${email}`
     );
 
     return response.data;
@@ -23,7 +23,7 @@ export const getOrderDetailsForAdmin = createAsyncThunk(
   async (id) => {
     const email = sessionStorage.getItem("email");
     const response = await axios.get(
-      `http://localhost:5000/api/admin/orders/details/${id}/${email}`
+      `https://e-commerce-server-4qa7.onrender.com/api/admin/orders/details/${id}/${email}`
     );
 
     return response.data;
@@ -34,7 +34,7 @@ export const updateOrderStatus = createAsyncThunk(
   "/order/updateOrderStatus",
   async ({ id, orderStatus }) => {
     const response = await axios.put(
-      `http://localhost:5000/api/admin/orders/update/${id}`,
+      `https://e-commerce-server-4qa7.onrender.com/api/admin/orders/update/${id}`,
       {
         orderStatus,
       }
