@@ -31,7 +31,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://shop-shopping-on-shopify.netlify.app",
+      "https://shop-shopping.netlify.app",
     ],
 
     methods: ["GET", "POST", "DELETE", "PUT"],

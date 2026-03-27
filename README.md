@@ -7,7 +7,7 @@ This project replicates core features of platforms like Shopify, including authe
 
 ## 🚀 Live Demo:-
 
-- Frontend: https://shop-shopping-on-shopify.netlify.app 
+- Frontend: https://shop-shopping.netlify.app 
 
 - Backend API: https://e-commerce-server-4qa7.onrender.com 
 

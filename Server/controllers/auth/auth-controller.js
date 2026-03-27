@@ -170,7 +170,7 @@ const forgotPassword = async (req, res) => {
       expiresIn: "1h",
     });
 
-    const resetLink = `https://shop-shopping-on-shopify.netlify.app/reset-password/${user._id}/${token}`;
+    const resetLink = `https://shop-shopping.netlify.app/reset-password/${user._id}/${token}`;
 
     await sendEmail(  
       user.email,
